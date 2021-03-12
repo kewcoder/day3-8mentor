@@ -1,9 +1,11 @@
+import Link from 'next/link'
+import styles from'../styles/Home.module.css'
 export default function Home() {
   return (
-   <div>
+   <div className={styles.main}>
      Home
-    <br />
-     <a href="/mentors">Go to Mentors</a>
+    <br/>
+     <Link href='/mentors'>Go to Mentors</Link>
    </div>
   )
 }

@@ -1,10 +1,10 @@
+import Link from 'next/link'
 export default function Home() {
   return (
    <div>
      This is mentor Page
-<br />
-     <a href="/">Back to Home</a>
-
+      <br />
+     <Link href='/'>Back to Home</Link>
    </div>
   )
 }
