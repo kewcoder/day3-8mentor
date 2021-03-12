@@ -1,9 +1,10 @@
 export default function Home() {
   return (
    <div>
-     Home
-    <br />
-     <a href="/mentors">Go to Mentors</a>
+     This is mentor Page
+<br />
+     <a href="/">Back to Home</a>
+
    </div>
   )
 }
