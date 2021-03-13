@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .bg-light{
+        --primary: #FB8122;
+        --secindary: #E1E2E2;
+        --color: #1D2228;
+        --gradient: #BDC8D5;
+        background: linear-gradient(174.31deg, #BDC8D5 -3.73%, #FFFFFF 102.38%);
+        color: var(--color);
+    }
+    @variants dark {
+        .bg-dark{
+            --primary: #FB8122;
+            --secondary: #1D2228;
+            --color: #E1E2E2;
+            --gradient: #3A256D;
+            background: linear-gradient(174.31deg, #3A256D -3.73%, #492DD8 102.38%);
+            color: var(--color);
+        }
+    }
+}
+
+.bg-img{
+    background-image:url(/bg.jpg);
+    background-position: center;
+    position: absolute;
+    opacity: .1;
+}
